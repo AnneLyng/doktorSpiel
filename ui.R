@@ -5,7 +5,7 @@ dashboardPage(
     dashboardHeader(disable = T),
     dashboardSidebar(disable = T),
     dashboardBody(box(width=12,
-                      tabbox(width=12, id="tabBox_next_previous",
+                      tabBox(width=12, id="tabBox_next_previous",
                              tabelPanel("Introduction",
                                         p("Introduction to the doktorSpiel")),
                              tabelPanel("Initial treatment schemes",
