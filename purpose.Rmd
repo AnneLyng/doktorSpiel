@@ -1,0 +1,15 @@
+---
+title: "purpose"
+runtime: shiny
+output: html_document
+---
+
+This game serves the purpose of applying results from survival analysis into the treatment dose decision making. 
+By using real data both from clinical studies as well as observational studies, probabilities, harzards and p-values can contribute
+to a better treatment regime for the patient. 
+We aim to strengthen the understanding of how to customize treatments based on the results of statistics. We also aim to strength the understanding of how the individual patient can behave vs the general population....
+
+1. Understand the survivor function $S(t)$ and hazard function $h(t)$ - and how they differ.
+2. Understand the 
+
+
