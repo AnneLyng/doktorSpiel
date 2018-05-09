@@ -11,6 +11,11 @@ ymax = 100
 probEvent1 <- 1/4
 probEvent2 <- 1/3
 probDeath <- 1-probEvent1-probEvent2
+
+f0 <- function(x,min,max) ifelse(x >= min & x <= max, xmax, NA)
+f1 <- function(x,min,max) qnorm(x/100,0.5,0.1)*100*ifelse(x >= min & x <= max, 1, NA)
+f2 <- function(x,min,max) (1-5*dnorm(x,80,14))*80*ifelse(x >= min & x <= max, 1, NA)
+
 xPoints <- c(0,xmax*probEvent1, xmax*(probEvent1+probDeath),xmax)
 yPoints <- c(0, ymax, ymax,0)
 

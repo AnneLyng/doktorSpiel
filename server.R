@@ -15,12 +15,14 @@ Next_Button <- div(actionButton("Next_Tab",HTML('<div class="col-sm-4"><i class=
 
 # The server input, output and session info
 shinyServer(function(input,output,session) {
-  
   # settings for all of the tabs (previous and next buttons)
   source('NextPreviousButtons.R',local=TRUE)
 
   # The introduction tab (create text from the input that the player enters)
   source('introductionText.R',local=TRUE)
+  
+  # The surivial theory with examples
+  # source('survivalTheoryAndExample.R',local=TRUE)
     
   # The game tab
   source('theGame.R',local=TRUE)
