@@ -1,0 +1,41 @@
+---
+output: html_document
+bibliography: bibliography.bibtex
+---
+
+As a doctor, we assume that one of the primary goals is to diagnose and treat illness in patients. When the diagnosis is set, one way to treat the patients is to lower their risk of a specific event by e.g. a treatment regime, which could result in prolonging their lifespan or quality of life. Treatment regimes are most likely based on the disease of interest but possibly also on the characteristics on the patient getting the treatment. We will in the following start with presenting survival analysis theory, follwing an example that will help in vizualizing some of the measures, that are most commonly used in survival analysis. Such measures includes e.g. the Kaplan-Meier curve, statistical results of a cox proportional hazards model etc. 
+
+Eventhough the overall focus is survival analysis, there will also be questions which tests the player's knowlegde about common measures in statistics such as p-values, power-tests etc. These will contribute, but play a less important role in the game. 
+
+# The theory of interest
+
+We let $T$ be a random variable for an individual's survival time and $t$ be a specific value for $T$.
+$S(t)=P(T>t)$ is then the survival function at time $t$. That is, the probability that the random variable $T$ is larger than the specific value $t$. 
+
+$$h(t)=-(\log(S(t))'$$
+Notice how the hazard is the derivative of the surivial function. Thinking back upon the math you had in high school, you will maybe remember that the derivate of a function is the speed or slope of the function specified at a point $t$. The same interpretation can be used for the relationship between the hazard and survival function. 
+
+Some find that the transformation of the 
+
+$$H(t)=\int^t_0 h(t) \text{d}t=-\log(S(t))$$
+The other measure of interest is the hazard function. 
+
+Notice how the hazard function is a conditional measure. The hazard function is conditional on the survival from the event at least until $t$. The survival function is not a conditional measure, but a general measure for the surivial of a population as a function of time $t$.  
+
+# Example 
+
+As a doctor, we assume that one of the primary goals are to keep the patients disease free during their lifespan. One such way is to treat the patients to lower their risk of specific diseases. 
+
+In this example, are we going to focus on the risk of stroke and bleeding. 
+
+## Stroke vs. Bleeding
+
+To decrease the risk of stroke, blood thinning medicin can be used. The use of blood thinning medicin can lead to a higher the risk of bleeding. 
+
+```{r}
+
+```
+
+# References
+
+@Linear
