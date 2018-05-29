@@ -22,7 +22,7 @@ shinyServer(function(input,output,session) {
   source('introductionText.R',local=TRUE)
   
   # The surivial theory with examples
-  # source('survivalTheoryAndExample.R',local=TRUE)
+  source('survivalExample.R',local=TRUE)
     
   # The game tab
   source('theGame.R',local=TRUE)

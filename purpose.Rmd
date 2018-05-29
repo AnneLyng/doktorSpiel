@@ -1,15 +1,20 @@
 ---
-title: "purpose"
 runtime: shiny
 output: html_document
 ---
 
-This game serves the purpose of applying results from survival analysis into the treatment dose decision making. 
-By using real data both from clinical studies as well as observational studies, probabilities, harzards and p-values can contribute
-to a better treatment regime for the patient. 
-We aim to strengthen the understanding of how to customize treatments based on the results of statistics. We also aim to strength the understanding of how the individual patient can behave vs the general population....
+This *game* serves the purpose of testing the *player's* understanding of the statistical results from survival analysis. The game assigns a group of patients at risk of an specific event to the player, hence making the player responsible for the care of the group of patients. The group of patients will vary in their characteristics, which may have an effect on the individual patient's risk of experiencing a certain event. Besides patients, the player is also given results of an statistical analysis related to the event of interest. Such results could include estimates of survival probabilities, hazard rates etc. Based on the estimates the player can decide to initiate treatment or adapt an existing treatment regime to ensure the best care of his/her patients under the risk of the event. The game is designed in such a way that the best treatment plan is made if the player:
 
-1. Understand the survivor function $S(t)$ and hazard function $h(t)$ - and how they differ.
-2. Understand the 
+1. Understands the survivor function $S(t)$ and hazard function $h(t)$.
+2. Understands the uncertainty associated with the estimates from the statistical analysis.
+3. Understands how to read an R output and/or scientic articles that contains survival analyses.
 
+
+Besides being a game, the doktorSpiel also includes an interface for simulating both the survivor function $S(t)$ and hazard function $h(t)$, enabling the player to test treatment regimes before applying them to it's group of patients. 
+
+### How to play the doktorSpiel
+
+If this is your first time trying the doktorSpiel, we highly recommend you to go to the "Introduction part 2"-tab either by pressing the tab in the top of the page, or by pressing the ">>" button in the bottom of the page.
+
+If you have already done so, and just want to start playing the doktorSpiel, you can go straight to the game by pressing the "The game - treatment process simulator"-tab or pressing the ">>" button in the bottom of the page twice. 
 

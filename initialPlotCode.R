@@ -27,11 +27,12 @@ lengthT2 <- xmax-xmax*(probEvent1+probDeath)
 slope2 <- -ymax/lengthT2
 
 # initial position
-x <- sample(5:95, 1)
+x <- sample(90:95, 1)
 y <- 0
 xInit <- x
 yInit <- y
 bound <<- 0
+val <<- 100
 
 last9 = data.frame(x=rep(xInit,9),y=rep(yInit,9))
 colScale = c("gray20", "gray25", "gray30", "gray40", "gray50",

@@ -27,6 +27,7 @@ y <- 0
 xInit <- x
 yInit <- y
 bound <<- 0
+val <<- 100
 
 last9 = data.frame(x=rep(xInit,9),y=rep(yInit,9))
 colScale = c("gray20", "gray25", "gray30", "gray40", "gray50",
