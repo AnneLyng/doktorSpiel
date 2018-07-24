@@ -13,9 +13,7 @@ We let $T$ be a random variable for an individual's survival time and $t$ be a s
 $S(t)=P(T>t)$ is then the survival function at time $t$. That is, the probability that the random variable $T$ is larger than the specific value $t$. 
 
 $$h(t)=-(\log(S(t))'$$
-Notice how the hazard is the derivative of the surivial function. Thinking back upon the math you had in high school, you will maybe remember that the derivate of a function is the speed or slope of the function specified at a point $t$. The same interpretation can be used for the relationship between the hazard and survival function. 
-
-Some find that the transformation of the 
+Notice how the hazard is the derivative of the surivial function. Thinking back upon the mathematics you might have learned in high school, you will maybe remember that the derivate of a function is the speed of the function specified at a point $t$. The same interpretation can be used for the hazard rate. The hazard rate is the speed at which a person gets a disease or dies. If the hazard rate is large the probability of disease/dying is relatively large. 
 
 $$H(t)=\int^t_0 h(t) \text{d}t=-\log(S(t))$$
 The other measure of interest is the hazard function. 
@@ -26,16 +24,14 @@ Notice how the hazard function is a conditional measure. The hazard function is 
 
 As a doctor, we assume that one of the primary goals are to keep the patients disease free during their lifespan. One such way is to treat the patients to lower their risk of specific diseases. 
 
+We will mainly use results from the Cox proportional hazards model:
+$$h(t,X_{i1}, \dots,X_{iK})=\alpha_0(t)\exp(\beta_1X_{i1}+\dots+\beta_KX_{iK})$$
+where $X_i=X_{i1},\dots,X_{iK}$ are explainatory values for individual $i$, $\exp(\beta_k)$ is the hazard ratio and quantifies if and how different values of $X_{ik}$ change the instantaneous survival chances. Lastly $\alpha_0(t)$ is the baseline hazard function. An important assumption in the model is that the hazard ratios does not change over time. 
+
+
+
 In this example, are we going to focus on the risk of stroke and bleeding. 
 
 ## Stroke vs. Bleeding
 
 To decrease the risk of stroke, blood thinning medicin can be used. The use of blood thinning medicin can lead to a higher the risk of bleeding. 
-
-```{r}
-
-```
-
-# References
-
-@Linear

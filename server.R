@@ -26,5 +26,5 @@ shinyServer(function(input,output,session) {
     
   # The game tab
   source('theGame.R',local=TRUE)
-})
 
+})

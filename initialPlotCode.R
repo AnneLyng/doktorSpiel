@@ -16,8 +16,8 @@ f0 <- function(x,min,max) ifelse(x >= min & x <= max, xmax, NA)
 f1 <- function(x,min,max) qnorm(x/100,0.5,0.1)*100*ifelse(x >= min & x <= max, 1, NA)
 f2 <- function(x,min,max) (1-5*dnorm(x,80,14))*80*ifelse(x >= min & x <= max, 1, NA)
 
-xPoints <- c(0,xmax*probEvent1, xmax*(probEvent1+probDeath),xmax)
-yPoints <- c(0, ymax, ymax,0)
+xPoints <<- c(0,xmax*probEvent1, xmax*(probEvent1+probDeath),xmax)
+yPoints <<- c(0, ymax, ymax,0)
 
 # calculate boundaries (dependence on the placement of x and y)
 lengthT1 <- xmax*probEvent1
@@ -27,14 +27,14 @@ lengthT2 <- xmax-xmax*(probEvent1+probDeath)
 slope2 <- -ymax/lengthT2
 
 # initial position
-x <- sample(90:95, 1)
-y <- 0
+x <<- sample(90:95, 1)
+y <<- 0
 xInit <- x
 yInit <- y
 bound <<- 0
 val <<- 100
 
-last9 = data.frame(x=rep(xInit,9),y=rep(yInit,9))
+last9 <<- data.frame(x=rep(xInit,9),y=rep(yInit,9))
 colScale = c("gray20", "gray25", "gray30", "gray40", "gray50",
              "gray60", "gray70", "gray80","white")
 
